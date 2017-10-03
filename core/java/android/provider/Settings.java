@@ -7865,11 +7865,17 @@ public final class Settings {
 
         private static final Validator NOTIFICATION_BADGING_VALIDATOR = BOOLEAN_VALIDATOR;
 
-	/**
+        /**
          * Whether to enable navigation bar
          * @hide
          */
         public static final String NAVIGATION_BAR_ENABLED = "navigation_bar_enabled";
+        
+        /**
+         * Doublt tap to sleep gesture
+         * @hide
+         */
+        public static final String DOUBLE_TAP_SLEEP_GESTURE = "double_tap_sleep_gesture";
 
         /**
          * Comma separated list of QS tiles that have been auto-added already.
