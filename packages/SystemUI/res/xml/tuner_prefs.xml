@@ -83,11 +83,6 @@
         <com.android.systemui.tuner.StatusBarSwitch
             android:key="alarm_clock"
             android:title="@string/status_bar_alarm" />
-
-        <com.android.systemui.tuner.BatteryPreference
-            android:title="@string/battery"
-            android:summary="%s"
-            android:entries="@array/battery_options" />
    
        <com.android.systemui.tuner.ClockPreference
             android:title="@string/tuner_time"
@@ -109,6 +104,25 @@
             sysui:metricsAction="315" />
 
     </PreferenceScreen>
+    
+    <PreferenceCategory
+        android:title="@string/status_bar_battery_title" >
+
+        <com.android.systemui.tuner.SecureSettingDropDownPreference
+            android:key="status_bar_battery_style"
+            android:title="@string/status_bar_battery_style_title"
+            android:summary="%s"
+            android:entries="@array/status_bar_battery_style_entries"
+            android:entryValues="@array/status_bar_battery_style_values" />
+
+        <com.android.systemui.tuner.SystemSettingDropDownPreference
+            android:key="status_bar_show_battery_percent"
+            android:title="@string/status_bar_battery_percentage_title"
+            android:summary="%s"
+            android:entries="@array/status_bar_battery_percentage_entries"
+            android:entryValues="@array/status_bar_battery_percentage_values" />
+
+    </PreferenceCategory>
     
     <PreferenceCategory
         android:title="@string/network_traffic_state_title" >
