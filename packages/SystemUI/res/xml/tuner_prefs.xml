@@ -109,6 +109,17 @@
             sysui:metricsAction="315" />
 
     </PreferenceScreen>
+    
+    <PreferenceCategory
+        android:title="@string/network_traffic_state_title" >
+
+        <com.android.systemui.tuner.SystemSettingSwitchPreference
+            android:key="network_traffic_state"
+            android:title="@string/network_traffic_state_title"
+            android:summary="@string/network_traffic_state_title_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
 
     <PreferenceScreen
       android:key="doze"
