@@ -92,6 +92,17 @@
     </PreferenceScreen>
 
     <PreferenceScreen
+        android:key="navigation_bar"
+        android:title="@string/nav_bar">
+
+        <com.android.systemui.tuner.SecureSettingSwitchPreference
+            android:key="navigation_bar_enabled"
+            android:title="@string/navigation_bar_enabled_title"
+            android:defaultValue="true" />
+
+    </PreferenceScreen>
+    
+    <PreferenceScreen
         android:key="volume_and_do_not_disturb"
         android:title="@string/volume_and_do_not_disturb">
 
